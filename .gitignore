@@ -1,0 +1,48 @@
+Build output
+build/
+bin/
+obj/
+out/
+Compiled binaries
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+Debug / release builds
+debug/
+release/
+CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_install/
+Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+VS Code
+.vscode/
+CLion
+.idea/
+macOS
+.DS_Store
+Windows
+Thumbs.db
+Desktop.ini
+Logs
+*.log
+Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+CHIP-8
+chip-8
