@@ -7,8 +7,6 @@
 #define DISPLAY_HEIGHT 32
 #define FONT_SIZE 80
 
-typedef struct Chip8_t Chip8;
-
 const static uint_8t fontset[FONT_SIZE] = {
     0xF0, 0x90, 0x90, 0x90, 0xF0, //0
     0x20, 0x60, 0x20, 0x20, 0x70, //1
@@ -27,9 +25,7 @@ const static uint_8t fontset[FONT_SIZE] = {
     0xE0, 0x90, 0x90, 0x90, 0xE0, //D
     0xF0, 0x80, 0xF0, 0x80, 0xF0, //E
     0xF0, 0x80, 0xF0, 0x80, 0x80, //F
-:q
-:
-
+}
 
 struct Chip8_t {
     //memory
@@ -42,7 +38,8 @@ struct Chip8_t {
     uint8_t  dt;      // delay timer
     uint16_t pc;      // program counter
     uint8_t  sc;      // stack counter
-    
+
+    uint16_t current_op; //current operation   
 
 }
 
