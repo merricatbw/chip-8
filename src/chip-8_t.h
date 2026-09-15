@@ -39,8 +39,6 @@ struct Chip8_t {
     uint16_t pc;      // program counter
     uint8_t  sc;      // stack counter
 
-    uint16_t current_op; //current operation   
-
 }
 
 #endif
