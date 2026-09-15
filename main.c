@@ -12,6 +12,6 @@ int main() {
     uint16_t  I;      // I register
     uint8_t  st;      // sound timer
     uint8_t  dt;      // delay timer
-    uint16_t pc;      // program counter 
+    uint16_t pc;      // program counter
     uint8_t  sc;      // stack counter
 }
