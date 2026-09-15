@@ -1,13 +1,13 @@
-# include "raylib.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#ifndef chip8_t
+#define chip8_t
 
 #define MEMORY_SIZE 4095
 
 #define DISPLAY_WIDTH 64
 #define DISPLAY_HEIGHT 32
 #define FONT_SIZE 80
+
+typedef struct Chip8_t Chip8;
 
 const static uint_8t fontset[FONT_SIZE] = {
     0xF0, 0x90, 0x90, 0x90, 0xF0, //0
@@ -27,12 +27,11 @@ const static uint_8t fontset[FONT_SIZE] = {
     0xE0, 0x90, 0x90, 0x90, 0xE0, //D
     0xF0, 0x80, 0xF0, 0x80, 0xF0, //E
     0xF0, 0x80, 0xF0, 0x80, 0x80, //F
-};
+:q
+:
 
 
-int main() {
-    InitWindow(DISPLAY_WIDTH * 4, DISPLAY_HEIGHT * 4, "chip-8");
-    SetTargetFPS(60);
+struct Chip8_t {
     //memory
     uint8_t memory[MEMORY_SIZE];
 
@@ -45,7 +44,6 @@ int main() {
     uint8_t  sc;      // stack counter
     
 
-    while(!WindowShouldClose()) {
-
-    }
 }
+
+#endif
